@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Master IA Meknes</title>
+    </head>
+<body>
+    <div class="container">
+        <h1>Master IA Meknes</h1>
+        <button class="button" onclick="toggleSemesters('promo1')">Promotion 1 <smal>2021 - 2023</smal></button>
+        <button class="button" onclick="toggleSemesters('promo2')">Promotion 2 <smal>2022 - 2024</smal></button>
+        <button class="button" onclick="toggleSemesters('promo3')">Promotion 3 <smal>2023 - 2025</smal></button>
+
+        <div class="semester-list" id="promo1">
+            <h2>Promotion 1 <small>2021 - 2023</small></h2>
+            <ul>
+                <li><a href="https://drive.google.com/drive/folders/1541y5rjM82D3ZSO6fEY-luGCe428ewPw?usp=sharing" target="_blank">Semester 1</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1Mu64xECyzc-rZDCK8MPcGvPADBkLs7ov?usp=sharing" target="_blank">Semester 2</a></li>
+                <li><a href="https://drive.google.com/drive/folders/14331ms1_W5lFcCCxx8CisyZ9bbW1CcLt?usp=sharing" target="_blank">Semester 3</a></li>
+            </ul>
+        </div>
+
+        <div class="semester-list" id="promo2">
+            <h2>Promotion 2 <small>2022 - 2024</small></h2>
+            <ul>
+                <li><a href="https://drive.google.com/drive/folders/1NwjcqesUDASWoZmpHERAp1q_Rvv2HXC3?usp=sharing" target="_blank">Semester 1</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1hZSP5EaLS0u4Lvoo5-4ly3GrsF0Yvrw1?usp=sharing" target="_blank">Semester 2</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1lpB0i3cGXfa6Er9BhyLLSTPKOh3qOU0t?usp=sharing" target="_blank">Semester 3</a></li>
+            </ul>
+        </div>
+
+        <div class="semester-list" id="promo3">
+            <h2>Promotion 3 <small>2023 - 2025</small></h2>
+            <ul>
+                <li><a href="https://drive.google.com/your-link-to-semester-1-promo-3" target="_blank">Semester 1</a></li>
+                <li><a href="https://drive.google.com/your-link-to-semester-2-promo-3" target="_blank">Semester 2</a></li>
+                <li><a href="https://drive.google.com/your-link-to-semester-3-promo-3" target="_blank">Semester 3</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleSemesters(promo) {
+            var semesterList = document.getElementById(promo);
+            if (semesterList.style.display === 'block') {
+                semesterList.style.display = 'none';
+            } else {
+                semesterList.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
